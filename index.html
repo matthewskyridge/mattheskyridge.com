@@ -1,45 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Matthew Scarage | Real Estate</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Sky Ridge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #222;
+      background-color: #fff;
     }
     header {
-      background: #000;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      z-index: 10;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: bold;
       color: white;
-      padding: 2rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1619025431647-c3c5a4dba5ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 60px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background-color: #d4af37;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #b9972f;
+    }
+    .about {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
       text-align: center;
     }
-    main {
-      padding: 2rem;
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .about img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
     footer {
-      background: #eee;
+      background-color: #111;
+      color: #bbb;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 40px 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Matthew Scarage</h1>
-    <p>Luxury Real Estate Professional</p>
+    <div class="logo">Matthew Sky Ridge</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <main>
-    <h2>Welcome to My Site</h2>
-    <p>This is where high-end real estate meets relentless ambition. Listings, stories, and strategy — all coming soon.</p>
-  </main>
-  <footer>
-    &copy; 2025 Matthew Scarage. All rights reserved.
+
+  <section class="hero">
+    <div>
+      <h1>Live Beyond Limits</h1>
+      <p>Luxury Real Estate | Vision | Precision | South Florida</p>
+      <button onclick="location.href='#contact'">Book a Consultation</button>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Matthew Sky Ridge</h2>
+    <p>Driven by vision and rooted in results, Matthew Sky Ridge is redefining what it means to deliver excellence in the luxury real estate market. With a sharp eye for value, market momentum, and client experience, Matthew crafts tailored journeys through the world of high-end real estate. This isn’t just about homes — it’s about prestige, performance, and purpose.</p>
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80" alt="Luxury Mountainscape" />
+  </section>
+
+  <footer id="contact">
+    &copy; 2025 Matthew Sky Ridge. All Rights Reserved.
   </footer>
 </body>
 </html>
