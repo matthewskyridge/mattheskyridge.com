@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Matthew Sky Ridge</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matthew SkyRidge</title>
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Tenor Sans', sans-serif;
-      background-color: #0d0d0d;
-      color: #e6c36f;
+      padding: 0;
+      box-sizing: border-box;
     }
-
+    body {
+      font-family: 'Tenor Sans', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
     header {
+      background-color: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background-color: #0d0d0d;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
-
-    .nav-links a {
-      color: #e6c36f;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 16px;
-      transition: color 0.3s ease;
+      color: #333;
+      font-weight: 600;
     }
-
-    .nav-links a:hover {
-      color: #ffffff;
+    nav a:hover {
+      color: #0077aa;
     }
-
     .hero {
-      margin-top: 80px;
-      background: url('https://via.placeholder.com/1600x700.png?text=Your+Landscape+Shot+Here') center/cover no-repeat;
-      height: 700px;
+      position: relative;
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1549921296-3a6b90cddc2a?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      padding-left: 60px;
+      color: white;
+    }
+    .hero-text {
+      max-width: 600px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    section.about {
+      padding: 60px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #fff;
+    }
+    .about-text {
+      flex: 1;
+      padding-right: 40px;
+    }
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .about-img {
+      flex: 1;
+    }
+    .about-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px;
       text-align: center;
-      color: #e6c36f;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      font-weight: normal;
-      margin: 10px 0;
-    }
-
-    .about {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .about p {
-      font-size: 18px;
-      line-height: 1.8;
-      color: #ccc;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 36px; }
-      .hero h2 { font-size: 22px; }
-      .nav-links { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo"><strong>Matthew Sky Ridge</strong></div>
-    <nav class="nav-links">
+    <div><strong>Matthew SkyRidge</strong></div>
+    <nav>
       <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#about">About</a>
       <a href="#">Partners</a>
       <a href="#">Listings</a>
       <a href="#">Contact</a>
@@ -99,20 +104,25 @@
   </header>
 
   <section class="hero">
-    <h1>The Spirit of Spokane</h1>
-    <h2>A Heart for People</h2>
-    <h2>A Mind for Business</h2>
+    <div class="hero-text">
+      <h1>A Spirit of Spokane</h1>
+      <p>A heart for people.<br>A mind for business.</p>
+    </div>
   </section>
 
-  <section class="about">
-    <h2>About Matthew Sky Ridge</h2>
-    <p>
-      Matthew Sky Ridge is a forward-thinking real estate agent based in Spokane,
-      known for his sharp business acumen, dedication to client service, and a passion
-      for connecting people with the homes of their dreams. His mission is to redefine
-      the luxury home experience with integrity, intelligence, and heart.
-    </p>
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>Meet Matthew SkyRidge</h2>
+      <p>Matthew SkyRidge is a passionate, driven real estate professional based in Spokane. With a flair for design, a sharp eye for opportunity, and a deep understanding of people, he brings a distinctive energy to the world of luxury real estate. Clients love his authenticity, reliability, and the unforgettable experience he brings to every showing.</p>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Mountain landscape">
+    </div>
   </section>
+
+  <footer>
+    &copy; 2025 Matthew SkyRidge. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
