@@ -1,134 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matthew Sky Ridge</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
     body {
-      font-family: 'Open Sans', sans-serif;
-      color: #222;
-      background-color: #fff;
+      margin: 0;
+      font-family: 'Tenor Sans', sans-serif;
+      background-color: #0d0d0d;
+      color: #e6c36f;
     }
+
     header {
-      position: absolute;
-      top: 0;
-      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 60px;
+      padding: 20px 40px;
+      background-color: #0d0d0d;
+      position: fixed;
+      width: 100%;
+      top: 0;
       z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      font-weight: bold;
-      color: white;
-    }
-    nav a {
-      color: white;
-      margin-left: 25px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-    }
-    .hero {
-      height: 100vh;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1619025431647-c3c5a4dba5ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+
+    .nav-links {
       display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #e6c36f;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      margin-top: 80px;
+      background: url('https://via.placeholder.com/1600x700.png?text=Your+Landscape+Shot+Here') center/cover no-repeat;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #e6c36f;
     }
+
     .hero h1 {
-      font-size: 60px;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
+      font-size: 48px;
+      margin: 0;
     }
-    .hero p {
-      font-size: 22px;
-      margin-bottom: 30px;
+
+    .hero h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 10px 0;
     }
-    .hero button {
-      background-color: #d4af37;
-      color: #000;
-      border: none;
-      padding: 15px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-    .hero button:hover {
-      background-color: #b9972f;
-    }
+
     .about {
       padding: 80px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
       text-align: center;
     }
-    .about h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      font-family: 'Playfair Display', serif;
-    }
+
     .about p {
       font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 40px;
+      line-height: 1.8;
+      color: #ccc;
     }
-    .about img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #111;
-      color: #bbb;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 36px; }
+      .hero h2 { font-size: 22px; }
+      .nav-links { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Matthew Sky Ridge</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#partners">Partners</a>
-      <a href="#contact">Contact</a>
+    <div class="logo"><strong>Matthew Sky Ridge</strong></div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Partners</a>
+      <a href="#">Listings</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <div>
-      <h1>Live Beyond Limits</h1>
-      <p>Luxury Real Estate | Vision | Precision | South Florida</p>
-      <button onclick="location.href='#contact'">Book a Consultation</button>
-    </div>
+    <h1>The Spirit of Spokane</h1>
+    <h2>A Heart for People</h2>
+    <h2>A Mind for Business</h2>
   </section>
 
-  <section class="about" id="about">
+  <section class="about">
     <h2>About Matthew Sky Ridge</h2>
-    <p>Driven by vision and rooted in results, Matthew Sky Ridge is redefining what it means to deliver excellence in the luxury real estate market. With a sharp eye for value, market momentum, and client experience, Matthew crafts tailored journeys through the world of high-end real estate. This isn’t just about homes — it’s about prestige, performance, and purpose.</p>
-    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80" alt="Luxury Mountainscape" />
+    <p>
+      Matthew Sky Ridge is a forward-thinking real estate agent based in Spokane,
+      known for his sharp business acumen, dedication to client service, and a passion
+      for connecting people with the homes of their dreams. His mission is to redefine
+      the luxury home experience with integrity, intelligence, and heart.
+    </p>
   </section>
 
-  <footer id="contact">
-    &copy; 2025 Matthew Sky Ridge. All Rights Reserved.
-  </footer>
 </body>
 </html>
