@@ -3,113 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matthew SkyRidge | Luxury Real Estate</title>
+  <title>Matthew SkyRidge</title>
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Tenor Sans', serif;
-      background-color: #f7f5f2;
-      color: #2c2c2c;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Tenor Sans', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
     }
-
     header {
-      background-color: white;
-      padding: 20px 40px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      background-color: white;
+      padding: 20px 40px;
+      border-bottom: 4px solid navy;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
     nav a {
-      margin-left: 30px;
+      margin: 0 15px;
       text-decoration: none;
-      color: #2c2c2c;
-      font-weight: 500;
-      transition: color 0.3s ease;
+      color: #333;
+      font-weight: bold;
     }
-
-    nav a:hover {
-      color: #7a5c3e;
-    }
-
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?fit=crop&w=1600&q=80');
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
       background-size: cover;
       background-position: center;
       height: 90vh;
+      color: white;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      padding: 0 60px;
-      color: white;
+      padding-left: 60px;
+      position: relative;
     }
-
-    .hero h1 {
-      font-size: 3.5rem;
+    .hero-overlay {
+      background: rgba(0, 0, 50, 0.5);
+      padding: 40px;
       max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 48px;
       margin-bottom: 20px;
     }
-
     .hero p {
-      font-size: 1.4rem;
-      max-width: 500px;
+      font-size: 20px;
+      line-height: 1.6;
     }
-
     .about {
-      padding: 60px;
-      background-color: #fff;
-    }
-
-    .about h2 {
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-    }
-
-    .about-content {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
+      justify-content: center;
+      padding: 60px 40px;
+      background-color: #fff;
     }
-
     .about img {
-      flex: 1;
-      max-width: 500px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 400px;
+      height: auto;
+      margin-right: 40px;
+      border-radius: 12px;
     }
-
     .about-text {
-      flex: 2;
+      max-width: 600px;
     }
-
     footer {
+      background-color: navy;
+      color: white;
       text-align: center;
-      padding: 30px;
-      background-color: #e9e6df;
-      font-size: 0.9rem;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">Matthew SkyRidge</div>
+    <div><strong>Matthew Skyridge</strong></div>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -120,24 +88,23 @@
   </header>
 
   <section class="hero" id="home">
-    <div>
-      <h1>A Spirit of Spokane<br>A Heart for People<br>A Mind for Business</h1>
-      <p>Real estate representation with timeless class and modern edge.</p>
+    <div class="hero-overlay">
+      <h1>A spirit of Spokane.</h1>
+      <p>A heart for people.</p>
+      <p>A mind for business.</p>
     </div>
   </section>
 
   <section class="about" id="about">
-    <h2>About Matthew SkyRidge</h2>
-    <div class="about-content">
-      <img src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?fit=crop&w=800&q=80" alt="Mountains" />
-      <div class="about-text">
-        <p>Matthew SkyRidge brings a distinctive blend of charm, professionalism, and sharp business acumen to Spokane’s real estate scene. Known for hosting unforgettable open house experiences, Matthew elevates each showing with bespoke style and personal connection. From mountain vistas to city skylines, his work reflects a life lived at the intersection of luxury and authenticity.</p>
-      </div>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountain landscape" />
+    <div class="about-text">
+      <h2>About Matthew Skyridge</h2>
+      <p>Matthew Skyridge is a distinguished real estate professional known for his elegance, dedication, and results-driven approach. With an eye for design, a heart for people, and a mind for business, he curates premier real estate experiences throughout Spokane and beyond.</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Matthew SkyRidge. All rights reserved.
+    &copy; 2025 Matthew Skyridge. All rights reserved.
   </footer>
 </body>
 </html>
